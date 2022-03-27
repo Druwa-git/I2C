@@ -1,7 +1,7 @@
 # from torchvision import transforms
 from .transforms import transforms
 from torch.utils.data import DataLoader
-from .mydataset_crsimg import dataset as my_dataset_crsimg
+from .mydataset_crsimg import ReaderCrossImage as my_dataset_crsimg
 import torchvision
 import torch
 import numpy as np

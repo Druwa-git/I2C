@@ -22,13 +22,12 @@ CUDA_VISIBLE_DEVICES=$DEVICES python train_frame.py \
 	--crop_size=224 \
 	--input_size=256 \
 	--save_interval=1 \
-	--onehot=False \
 	--resume=False \
 	--dataset=imagenet  \
-	--img_dir=${ROOT_DIR}/data/ILSVRC/Data/CLS-LOC/train \
+	--img_dir=../../size_eval/dataset/ILSVRC \
 	--num_classes=1000 \
-	--snapshot_dir="../islvrc_snapshots/inceptionv3/inceptionv3_i2c_v1/"  \
-	--restore_from="../islvrc_snapshots/inceptionv3/inceptionv3_i2c_v0/imagenet_init_v0.pth.tar"
+	--snapshot_dir="../islvrc_snapshots"  \
+	--restore_from="../islvrc_snapshots"
 
 
 
